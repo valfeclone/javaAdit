@@ -138,7 +138,8 @@ public class GraphSten
   
   int minDistance(int[] paramArrayOfInt, Boolean[] paramArrayOfBoolean)
   {
-    int i = 99999;int j = -1;
+    int i = 99999;
+    int j = -1;
     for (int k = 0; k < V; k++)
       if ((!paramArrayOfBoolean[k].booleanValue()) && (paramArrayOfInt[k] <= i)) {
         i = paramArrayOfInt[k];
@@ -166,7 +167,7 @@ public class GraphSten
     
     arrayOfInt[paramInt] = 0;
     
-    for (i = 0; i < V - 1; i++)
+    for (int i = 0; i < V - 1; i++)
     {
 
 
@@ -210,15 +211,9 @@ public class GraphSten
       }
     }
     
-
-
-
-
-
-
     for (int k = 0; k < V; k++)
     {
-      for (i = 0; i < V; i++)
+      for (int i = 0; i < V; i++)
       {
 
         for (j = 0; j < V; j++)
