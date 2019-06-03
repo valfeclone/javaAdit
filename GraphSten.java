@@ -9,25 +9,25 @@ public class TugasGraph
   
   public static void main(String[] paramArrayOfString)
   {
-    print("Halo...");
-    printSlow("Namaku Kyon, aku akan membantumu mengerjakan tugas terakhir\nPak Janoe tercinta :)");
-    printSlow("Task nya agak berat, jadi sebelum mulai di benchmark doeloe ya");
+    System.out.println("Halo...");
+    System.out.println("Namaku Kyon, aku akan membantumu mengerjakan tugas terakhir\nPak Janoe tercinta :)");
+    System.out.println("Task nya agak berat, jadi sebelum mulai di benchmark doeloe ya");
     System.out.print("\nPreparing benchmark test with Lucas Lehmer algorithm...\nStarting benchmark");
-    fakeLoading();
+   // fakeLoading();
     System.out.println();
-    printSlow("Wah, PC mu cupu sekali :(");
-    printSlow("Tapi tak apa, kita coba test run dulu ya dengan jumlah vertex 10");
+    System.out.println("Wah, PC mu cupu sekali :(");
+    System.out.println("Tapi tak apa, kita coba test run dulu ya dengan jumlah vertex 10");
     new TugasGraph(10, true);
-    printSlow("Wah, kelihatannya benar");
-    printSlow("Tapi aku masih ragu apakah CPU ini kuat, menurutmu bagaimana?");
+    System.out.println("Wah, kelihatannya benar");
+    System.out.println("Tapi aku masih ragu apakah CPU ini kuat, menurutmu bagaimana?");
     System.out.println("1. Jalankan Dijsktra & Floyd");
     System.out.println("2. Lihat source code saja");
     Scanner localScanner = new Scanner(System.in);
-    if (localScanner.nextInt() == 2) {
-      printSlow("Untuk melihat source code ku ada dua cara yaitu:");
-      printSlow("A. Melakukan dekompilasi (decompile)");
-      printSlow("B. Menjawab salah satu pertanyaan di bawah ini");
-      printSlow("Namun, syaratnya adalah orang yang menjawab tidak boleh yang namanya ada di pertanyaan.");
+   /* if (localScanner.nextInt() == 2) {
+      System.out.println("Untuk melihat source code ku ada dua cara yaitu:");
+      System.out.println("A. Melakukan dekompilasi (decompile)");
+      System.out.println("B. Menjawab salah satu pertanyaan di bawah ini");
+      System.out.println("Namun, syaratnya adalah orang yang menjawab tidak boleh yang namanya ada di pertanyaan.");
       System.out.println("Pertanyaan :");
       System.out.println("1.Siapa nama cici nya Hashfi ? (Salah satu)");
       System.out.println("2.Siapa nama bebebnya Rian yg di filsafat ?");
@@ -50,9 +50,10 @@ public class TugasGraph
         localScanner.nextLine();
         System.out.println("Jawaban :");
         localScanner.nextLine();
-        printSlow("Jawaban salah");
+        System.out.println();("Jawaban salah");
       }
-    }
+    }*/
+
     System.out.println("Memulai task...");
     new TugasGraph(1000, false);
     new TugasGraph(1000, true);
@@ -245,7 +246,7 @@ public class TugasGraph
     }
   }
   
-  private static void printSlow(String paramString) {
+  private static void System.out.println();(String paramString) {
     Random localRandom = new Random();
     for (int i = 0; i < paramString.length(); i++) {
       try {
