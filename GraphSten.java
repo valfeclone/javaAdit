@@ -2,7 +2,7 @@ import java.io.PrintStream;
 import java.util.Random;
 import java.util.Scanner;
 
-public class TugasGraph
+public class GraphSten
 {
   int V;
   static final int INF = 99999;
@@ -17,7 +17,7 @@ public class TugasGraph
     System.out.println();
     printSlow("Wah, PC mu cupu sekali :(");
     printSlow("Tapi tak apa, kita coba test run dulu ya dengan jumlah vertex 10");
-    new TugasGraph(10, true);
+    new GraphSten(10, true);
     printSlow("Wah, kelihatannya benar");
     printSlow("Tapi aku masih ragu apakah CPU ini kuat, menurutmu bagaimana?");
     System.out.println("1. Jalankan Dijsktra & Floyd");
@@ -56,21 +56,21 @@ public class TugasGraph
     }*/
     
     System.out.println("Memulai task...");
-    new TugasGraph(1000, false);
-    new TugasGraph(1000, true);
-    new TugasGraph(10000, false);
-    new TugasGraph(10000, true);
-    new TugasGraph(20000, false);
-    new TugasGraph(20000, true);
-    new TugasGraph(50000, false);
-    new TugasGraph(50000, true);
-    new TugasGraph(100000, false);
-    new TugasGraph(100000, true);
+    new GraphSten(1000, false);
+    new GraphSten(1000, true);
+    new GraphSten(10000, false);
+    new GraphSten(10000, true);
+    new GraphSten(20000, false);
+    new GraphSten(20000, true);
+    new GraphSten(50000, false);
+    new GraphSten(50000, true);
+    new GraphSten(100000, false);
+    new GraphSten(100000, true);
     
     localScanner.close();
   }
   
-  public TugasGraph(int paramInt, boolean paramBoolean) {
+  public GraphSten(int paramInt, boolean paramBoolean) {
     V = paramInt;
     int[][] arrayOfInt = generateGraph(paramBoolean);
     
